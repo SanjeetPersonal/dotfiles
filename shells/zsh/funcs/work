@@ -12,7 +12,7 @@ local top_right_label=''
 local bottom_right_label='test'
 
 local left_cmd='nvim'
-local top_right_cmd='codex resume'
+local top_right_cmd='claude'
 local bottom_right_cmd='clear;'
 
 local root=''

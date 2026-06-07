@@ -1,3 +1,23 @@
 {
-  "theme": "dark-ansi"
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Users/sanjeet/.config/claude/hooks/context-mode-cache-heal.mjs\""
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "context-mode@context-mode": true
+  },
+  "theme": "dark",
+  "skipAutoPermissionPrompt": true,
+  "model": "sonnet"
 }

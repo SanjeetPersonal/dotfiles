@@ -1,4 +1,4 @@
-Include ~/.config/ssh/identities/1password
+Include ~/.config/ssh/identities/ssh-agent-macos
 
 Host github.com
   HostName           github.com

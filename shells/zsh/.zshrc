@@ -39,6 +39,9 @@ eval "$("$dircolors_bin" "$XDG_CONFIG_HOME/eza/.dircolors")"
   export XDG_CACHE_HOME="$HOME/.cache"
 }
 
+# Fuzzy finder
+eval "$(fzf --zsh)" && source "$XDG_CONFIG_HOME/fzf/fzf.sh"
+
 # Auto-complete
 plug marlonrichert/zsh-autocomplete || {
   autoload -Uz compinit
@@ -76,9 +79,6 @@ for fn in "$ZDOTDIR/funcs"/*(.N:t); do autoload -Uz "$fn"; done
 
 # Aliases
 source "$SHELL_CONFIG/aliases"
-
-# Fuzzy finder
-source <(fzf --zsh) && source "$XDG_CONFIG_HOME/fzf/fzf.sh"
 
 # Command history
 eval "$(atuin init zsh)" && {
