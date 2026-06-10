@@ -21,6 +21,10 @@ setopt incappendhistory
 setopt sharehistory
 setopt autocd
 
+# Completion/function lookup path
+fpath=("$ZDOTDIR/completions" "$ZDOTDIR/funcs" "${fpath[@]}")
+export FPATH
+
 # Plugin Manager
 source "$XDG_DATA_HOME/zap/zap.zsh"
 
@@ -31,6 +35,9 @@ autoload -Uz add-zsh-hook add-zle-hook-widget is-at-least zmathfunc
 # Color ls + eza
 dircolors_bin="$(command -v dircolors || command -v gdircolors)"
 eval "$("$dircolors_bin" "$XDG_CONFIG_HOME/eza/.dircolors")"
+
+# Fuzzy finder
+source "$XDG_CONFIG_HOME/fzf/fzf.sh" && eval "$(fzf --zsh)"
 
 # Prompt
 {
@@ -72,19 +79,23 @@ plug zsh-users/zsh-completions && {
     'reply=(${=${${(f)"$(cat /etc/ssh_hosts ~/.config/ssh/known_hosts 2>/dev/null)"}%%[# ]*}//,/ })'
 }
 
+# zsh-patina completion
+eval "$(zsh-patina completion)"
+
 # Functions
-fpath=("$ZDOTDIR/funcs" "${fpath[@]}")
-export FPATH
 for fn in "$ZDOTDIR/funcs"/*(.N:t); do autoload -Uz "$fn"; done
 
 # Aliases
 source "$SHELL_CONFIG/aliases"
 
 # Command history
-eval "$(atuin init zsh)" && {
-  bindkey -M vicmd '^r' atuin-search
-  bindkey -M vicmd '^[[A' atuin-up-search
-  bindkey -M vicmd '^[OA' atuin-up-search
+eval "$(atuin init zsh --disable-ai)" &&
+  source "$ZDOTDIR/patches/atuin-zsh-tty-capture.zsh" && {
+  export ATUIN_TMUX_POPUP=false
+
+  bindkey -M vicmd '^r' atuin-search-viins
+  bindkey -M vicmd '^[[A' atuin-up-search-viins
+  bindkey -M vicmd '^[OA' atuin-up-search-viins
 }
 
 # Directory jumper
@@ -96,5 +107,5 @@ bindkey -s '^[l' 'clear\n'
 bindkey -s '^n' '"$EDITOR" -S Session.vim\n'
 bindkey -s '^g' 'glg -5\n'
 
-# Syntax-highlighting
-plug zsh-users/zsh-syntax-highlighting
+# Syntax highlighting
+eval "$(zsh-patina activate)"

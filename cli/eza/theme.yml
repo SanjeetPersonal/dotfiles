@@ -156,6 +156,14 @@ filenames:
     icon:
       glyph: ""
 
+  .gitkeep:
+    filename:
+      foreground: 08
+    icon:
+      glyph: ""
+      style:
+        foreground: 08
+
   .state.itermexport:
     filename:
       foreground: black
@@ -277,10 +285,6 @@ filenames:
       glyph: ""
 
   ssh-agent:
-    icon:
-      glyph: ""
-
-  ssh-agent-macos:
     icon:
       glyph: ""
 
@@ -1136,6 +1140,10 @@ filenames:
     icon:
       glyph: "󰊕"
 
+  patch-zsh-autocomplete:
+    icon:
+      glyph: "󰊕"
+
   t:
     icon:
       glyph: "󰊕"
@@ -1144,7 +1152,7 @@ filenames:
     icon:
       glyph: "󰊕"
 
-  update-all:
+  update-tools:
     icon:
       glyph: "󰊕"
 
@@ -1188,6 +1196,10 @@ filenames:
     icon:
       glyph: ""
 
+  after:
+    icon:
+      glyph: ""
+
   archived_sessions:
     icon:
       glyph: ""
@@ -1220,6 +1232,62 @@ filenames:
     icon:
       glyph: ""
 
+  atuin.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  bat.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  bob.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  cargo.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  dust.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  eza.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  fd.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
   blink:
     icon:
       glyph: ""
@@ -1239,6 +1307,142 @@ filenames:
   computer-use:
     icon:
       glyph: ""
+
+  completions:
+    icon:
+      glyph: ""
+
+  patches:
+    icon:
+      glyph: ""
+
+  patina:
+    icon:
+      glyph: ""
+
+  syntax:
+    icon:
+      glyph: ""
+
+  rg.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  starship.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  tldr.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  uv.bash:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _atuin:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _bat:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _bob:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _cargo:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _dust:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _eza:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _fd:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _rg:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _starship:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _tldr:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
+
+  _uv:
+    filename:
+      foreground: 14
+    icon:
+      glyph: "󰌶"
+      style:
+        foreground: 14
 
   funcs:
     icon:

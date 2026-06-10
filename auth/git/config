@@ -10,7 +10,7 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/ssh/allowed_signers
-	ssprogram = ssh-keygen
+	program = ssh-keygen
 [commit]
 	gpgsign = true
 [include]
