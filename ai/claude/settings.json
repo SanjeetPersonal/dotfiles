@@ -2,6 +2,7 @@
   "permissions": {
     "defaultMode": "auto"
   },
+  "model": "sonnet",
   "hooks": {
     "SessionStart": [
       {
@@ -15,9 +16,19 @@
     ]
   },
   "enabledPlugins": {
-    "context-mode@context-mode": true
+    "context-mode@context-mode": true,
+    "architect@andrew-skills": true,
+    "obsidian-review@andrew-skills": true,
+    "publish-review@andrew-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "andrew-skills": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/sanjeet/Developer/andrew-skills"
+      }
+    }
   },
   "theme": "dark",
-  "skipAutoPermissionPrompt": true,
-  "model": "sonnet"
+  "skipAutoPermissionPrompt": true
 }
