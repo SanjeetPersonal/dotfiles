@@ -19,13 +19,31 @@
     "context-mode@context-mode": true,
     "architect@andrew-skills": true,
     "obsidian-review@andrew-skills": true,
-    "publish-review@andrew-skills": true
+    "publish-review@andrew-skills": true,
+    "defuddle@obsidian-skills": true,
+    "json-canvas@obsidian-skills": true,
+    "obsidian-bases@obsidian-skills": true,
+    "obsidian-cli@obsidian-skills": true,
+    "obsidian-markdown@obsidian-skills": true,
+    "superpowers@superpowers-skills": true
   },
   "extraKnownMarketplaces": {
     "andrew-skills": {
       "source": {
         "source": "directory",
         "path": "/Users/sanjeet/Developer/andrew-skills"
+      }
+    },
+    "obsidian-skills": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/sanjeet/Developer/obsidian-skills"
+      }
+    },
+    "superpowers-skills": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/sanjeet/Developer/superpowers-skills"
       }
     }
   },
