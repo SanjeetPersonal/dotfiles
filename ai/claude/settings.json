@@ -52,7 +52,9 @@
   "mcpServers": {
     "llm-wiki": {
       "command": "node",
-      "args": ["/Users/sanjeet/Developer/llm_wiki/mcp-server/dist/src/index.js"],
+      "args": [
+        "/Users/sanjeet/Developer/llm_wiki/mcp-server/dist/src/index.js"
+      ],
       "env": {
         "LLM_WIKI_API_BASE_URL": "http://127.0.0.1:19828"
       }
