@@ -4,12 +4,12 @@
 -- the path of the file it just edited to /tmp/claude-nvim/<encoded-cwd>.json. We
 -- watch that directory and, when the file for THIS nvim's cwd changes, show a ✳
 -- after that node in nvim-tree via a custom Decorator. The marker auto-clears
--- ~10s after the last edit.
+-- ~30s after the last edit.
 
 local M = {}
 
 local STATE_DIR = '/tmp/claude-nvim'
-local IDLE_MS = 10000
+local IDLE_MS = 30000
 
 --- Currently marked file (absolute path) or nil. Read by the Decorator.
 M.active_file = nil
