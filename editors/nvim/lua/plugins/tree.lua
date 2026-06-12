@@ -1,4 +1,5 @@
 local icons = require 'ui.icons'
+local claude_marker = require 'claude_marker'
 
 require('nvim-tree').setup {
   hijack_cursor = true,
@@ -34,6 +35,20 @@ require('nvim-tree').setup {
     highlight_diagnostics = 'all',
     highlight_modified = 'icon',
 
+    -- Explicit list overrides nvim-tree's default set, so all builtins are
+    -- re-listed to keep git/modified/diagnostics, plus our Claude marker.
+    decorators = {
+      'Git',
+      'Open',
+      'Hidden',
+      'Modified',
+      'Bookmark',
+      'Diagnostics',
+      'Copied',
+      claude_marker.Decorator,
+      'Cut',
+    },
+
     indent_markers = {
       enable = true,
       icons = { edge = '┊', item = '┊' },
@@ -68,6 +83,8 @@ require('nvim-tree').setup {
     },
   },
 }
+
+claude_marker.setup()
 
 local ok, api = pcall(require, 'nvim-tree.api')
 if ok then

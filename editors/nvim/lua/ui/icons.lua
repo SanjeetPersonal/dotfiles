@@ -4,6 +4,7 @@ return {
   bell = ' ',
   branch = '',
   checkmark = '✔',
+  claude = '✳',
   cmd_hist = '',
   cursor = '󰆾',
   database = '',
