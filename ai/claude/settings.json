@@ -2,7 +2,6 @@
   "permissions": {
     "defaultMode": "auto"
   },
-  "model": "opus[1m]",
   "hooks": {
     "SessionStart": [
       {
@@ -16,7 +15,7 @@
     ],
     "PostToolUse": [
       {
-        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Read",
         "hooks": [
           {
             "type": "command",
@@ -36,7 +35,8 @@
     "obsidian-bases@obsidian-skills": true,
     "obsidian-cli@obsidian-skills": true,
     "obsidian-markdown@obsidian-skills": true,
-    "superpowers@superpowers-skills": true
+    "superpowers@superpowers-skills": true,
+    "lua-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "andrew-skills": {
